@@ -77,6 +77,11 @@ function App() {
             </div>
           ) : null}
           <SearchSelect options={options} valueChange={setValue} />
+          <SearchSelect
+            searchBy="username"
+            options={options}
+            valueChange={setValue}
+          />
         </div>
       </div>
     </div>

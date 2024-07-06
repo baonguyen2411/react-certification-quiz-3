@@ -70,9 +70,9 @@ function SearchSelect({ searchBy = "label", options = [], valueChange }) {
                 <li
                   key={option.id}
                   className="search-select__dropdown-item"
-                  onClick={() => handleSelectItem(option.value)}
+                  onClick={() => handleSelectItem(option?.[searchBy])}
                 >
-                  {highlightText(inputValue, option.label)}
+                  {highlightText(inputValue, option?.[searchBy])}
                 </li>
               );
             })}
