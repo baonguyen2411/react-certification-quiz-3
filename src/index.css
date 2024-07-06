@@ -66,3 +66,49 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #f9f9f9;
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal__dialog {
+  width: 50%;
+  min-height: fit-content;
+  border-radius: 0.5rem;
+  background-color: white;
+  margin-inline: auto;
+  margin-top: 10%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header__title {
+  color: #1a1a1a;
+}
+
+.modal-header__close-btn {
+  background-color: transparent;
+  color: #1a1a1a;
+}
+
+.modal-body {
+  color: #1a1a1a;
+}
